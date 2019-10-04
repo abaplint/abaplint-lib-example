@@ -1,0 +1,25 @@
+{
+  "name": "abaplint-lib-example",
+  "version": "1.0.0",
+  "description": "foobar",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abaplint/abaplint-lib-example.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abaplint/abaplint-lib-example/issues"
+  },
+  "homepage": "https://github.com/abaplint/abaplint-lib-example#readme",
+  "dependencies": {
+    "abaplint": "^2.1.5"
+  },
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
+}
