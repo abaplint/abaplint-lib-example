@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/abaplint/abaplint-lib-example#readme",
   "dependencies": {
-    "abaplint": "^2.1.5"
+    "abaplint": "^2.1.6"
   },
   "devDependencies": {
     "typescript": "^3.6.3"

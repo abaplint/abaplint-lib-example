@@ -1,5 +1,5 @@
 import * as abaplint from "abaplint";
-import { MemoryFile } from "abaplint/build/src/files";
+import {MemoryFile} from "abaplint/build/src/files";
 
 function run() {
 
@@ -9,13 +9,20 @@ function run() {
   console.dir(reg.findIssues());
 
   for (const file of reg.getABAPFiles()) {
-    console.dir(file.getStructure());
+    const stru = file.getStructure();
+    console.dir(stru);
+
+    if (stru !== undefined) {
+      console.dir(stru.findAllExpressions(abaplint.abap.Expressions.AndReturn));
+    }
   }
-/*
+
   for (const obj of reg.getObjects()) {
-    if (obj instanceof abaplint.
+    if (obj instanceof abaplint.Objects.Class) {
+      console.dir(obj.getClassImplementations());
+    }
   }
-*/
+
 }
 
 run();
